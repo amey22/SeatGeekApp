@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCardCellId" rowHeight="120" id="KGk-i7-Jjw" customClass="EventCardCell" customModule="SeatGeekApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-CW-mXK">
+                        <rect key="frame" x="20" y="20" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="OzX-xJ-N1U"/>
+                            <constraint firstAttribute="width" constant="80" id="eBh-Uy-drq"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Rih-AG-sRo">
+                        <rect key="frame" x="115" y="11" width="282" height="98"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r23-7u-NfU">
+                                <rect key="frame" x="0.0" y="0.0" width="282" height="31.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ5-Fw-PjW">
+                                <rect key="frame" x="0.0" y="37.5" width="282" height="24.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob4-sn-Xwh">
+                                <rect key="frame" x="0.0" y="68" width="282" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c4i-CW-mXK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3Y3-aY-lII"/>
+                    <constraint firstItem="Rih-AG-sRo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="VpN-fS-C17"/>
+                    <constraint firstItem="c4i-CW-mXK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="luY-HD-aNK"/>
+                    <constraint firstItem="Rih-AG-sRo" firstAttribute="leading" secondItem="c4i-CW-mXK" secondAttribute="trailing" constant="15" id="rEQ-ke-zR1"/>
+                    <constraint firstAttribute="bottom" secondItem="Rih-AG-sRo" secondAttribute="bottom" constant="11" id="uao-Ui-Ul2"/>
+                    <constraint firstAttribute="trailing" secondItem="Rih-AG-sRo" secondAttribute="trailing" constant="15" id="ybx-3l-XBv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgEvent" destination="c4i-CW-mXK" id="Ek5-ZU-zq0"/>
+                <outlet property="lblDate" destination="Ob4-sn-Xwh" id="2JW-B1-4JZ"/>
+                <outlet property="lblTitle" destination="r23-7u-NfU" id="sng-rS-OBJ"/>
+                <outlet property="lblVenue" destination="IQ5-Fw-PjW" id="MrZ-R0-TtJ"/>
+            </connections>
+            <point key="canvasLocation" x="38" y="47"/>
+        </tableViewCell>
+    </objects>
+</document>

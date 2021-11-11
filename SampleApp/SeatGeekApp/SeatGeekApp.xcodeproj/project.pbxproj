@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D20D754273A581B001674FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D753273A581B001674FB /* AppDelegate.swift */; };
+		8D20D75B273A581B001674FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D20D759273A581B001674FB /* Main.storyboard */; };
+		8D20D75E273A581B001674FB /* SeatGeekApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D75C273A581B001674FB /* SeatGeekApp.xcdatamodeld */; };
+		8D20D760273A5820001674FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D20D75F273A5820001674FB /* Assets.xcassets */; };
+		8D20D763273A5820001674FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D20D761273A5820001674FB /* LaunchScreen.storyboard */; };
+		8D20D76E273A5821001674FB /* SeatGeekAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D76D273A5821001674FB /* SeatGeekAppTests.swift */; };
+		8D20D779273A5821001674FB /* SeatGeekAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D778273A5821001674FB /* SeatGeekAppUITests.swift */; };
+		8D20D79B273A5A51001674FB /* EventListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D795273A5A51001674FB /* EventListPresenter.swift */; };
+		8D20D79C273A5A51001674FB /* EventListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D796273A5A51001674FB /* EventListWorker.swift */; };
+		8D20D79D273A5A51001674FB /* EventListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D797273A5A51001674FB /* EventListRouter.swift */; };
+		8D20D79E273A5A51001674FB /* EventListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D798273A5A51001674FB /* EventListModels.swift */; };
+		8D20D79F273A5A51001674FB /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D799273A5A51001674FB /* EventListViewController.swift */; };
+		8D20D7A0273A5A51001674FB /* EventListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D79A273A5A51001674FB /* EventListInteractor.swift */; };
+		8D20D7A4273AA331001674FB /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D7A3273AA331001674FB /* EndPoints.swift */; };
+		8D20D7A9273AA419001674FB /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D7A7273AA419001674FB /* APIErrorModel.swift */; };
+		8D20D7AA273AA419001674FB /* NetworkLayerAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D7A8273AA419001674FB /* NetworkLayerAlamofire.swift */; };
+		8D20D7AC273AA4E6001674FB /* NetworkRechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20D7AB273AA4E6001674FB /* NetworkRechability.swift */; };
+		8D623140273C060E00C26BC8 /* EventCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D62313E273C060E00C26BC8 /* EventCardCell.swift */; };
+		8D623141273C060E00C26BC8 /* EventCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D62313F273C060E00C26BC8 /* EventCardCell.xib */; };
+		8D623143273C0CC600C26BC8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D623142273C0CC600C26BC8 /* Extensions.swift */; };
+		8D62314A273C404200C26BC8 /* EventDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D623144273C404100C26BC8 /* EventDetailsPresenter.swift */; };
+		8D62314B273C404200C26BC8 /* EventDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D623145273C404100C26BC8 /* EventDetailsWorker.swift */; };
+		8D62314D273C404200C26BC8 /* EventDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D623147273C404100C26BC8 /* EventDetailsModels.swift */; };
+		8D62314E273C404200C26BC8 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D623148273C404100C26BC8 /* EventDetailsViewController.swift */; };
+		8D62314F273C404200C26BC8 /* EventDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D623149273C404100C26BC8 /* EventDetailsInteractor.swift */; };
+		8D623151273C417F00C26BC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D623150273C417F00C26BC8 /* Constants.swift */; };
+		D0F3F23D80DE939CE02129A1 /* Pods_SeatGeekAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8065709C841D23885889BAF /* Pods_SeatGeekAppTests.framework */; };
+		F1BA826FFCBFC72FC1B7E2E0 /* Pods_SeatGeekApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030074FF9BC83456BEB52C67 /* Pods_SeatGeekApp.framework */; };
+		FCF604F5A1FAD94436538C2C /* Pods_SeatGeekApp_SeatGeekAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673D13D57BC52200F402BC2B /* Pods_SeatGeekApp_SeatGeekAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D20D76A273A5821001674FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D20D748273A581B001674FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D20D74F273A581B001674FB;
+			remoteInfo = SeatGeekApp;
+		};
+		8D20D775273A5821001674FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D20D748273A581B001674FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D20D74F273A581B001674FB;
+			remoteInfo = SeatGeekApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030074FF9BC83456BEB52C67 /* Pods_SeatGeekApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeatGeekApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B5B2FE1B600C587E734958E /* Pods-SeatGeekApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeatGeekApp.release.xcconfig"; path = "Target Support Files/Pods-SeatGeekApp/Pods-SeatGeekApp.release.xcconfig"; sourceTree = "<group>"; };
+		2441822E2F3C3A1768656659 /* Pods-SeatGeekAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeatGeekAppTests.release.xcconfig"; path = "Target Support Files/Pods-SeatGeekAppTests/Pods-SeatGeekAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		54E5192E4A8C4233517540A4 /* Pods-SeatGeekApp-SeatGeekAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeatGeekApp-SeatGeekAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SeatGeekApp-SeatGeekAppUITests/Pods-SeatGeekApp-SeatGeekAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		569FDCDEC0CD0B850150948E /* Pods-SeatGeekApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeatGeekApp.debug.xcconfig"; path = "Target Support Files/Pods-SeatGeekApp/Pods-SeatGeekApp.debug.xcconfig"; sourceTree = "<group>"; };
+		673D13D57BC52200F402BC2B /* Pods_SeatGeekApp_SeatGeekAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeatGeekApp_SeatGeekAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CAC89A8A8A4872E95FE7358 /* Pods-SeatGeekApp-SeatGeekAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeatGeekApp-SeatGeekAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SeatGeekApp-SeatGeekAppUITests/Pods-SeatGeekApp-SeatGeekAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D20D750273A581B001674FB /* SeatGeekApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeatGeekApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D20D753273A581B001674FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D20D75A273A581B001674FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D20D75D273A581B001674FB /* SeatGeekApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeatGeekApp.xcdatamodel; sourceTree = "<group>"; };
+		8D20D75F273A5820001674FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D20D762273A5820001674FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D20D764273A5820001674FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D20D769273A5821001674FB /* SeatGeekAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeatGeekAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D20D76D273A5821001674FB /* SeatGeekAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekAppTests.swift; sourceTree = "<group>"; };
+		8D20D76F273A5821001674FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D20D774273A5821001674FB /* SeatGeekAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeatGeekAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D20D778273A5821001674FB /* SeatGeekAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekAppUITests.swift; sourceTree = "<group>"; };
+		8D20D77A273A5821001674FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D20D795273A5A51001674FB /* EventListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListPresenter.swift; sourceTree = "<group>"; };
+		8D20D796273A5A51001674FB /* EventListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListWorker.swift; sourceTree = "<group>"; };
+		8D20D797273A5A51001674FB /* EventListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListRouter.swift; sourceTree = "<group>"; };
+		8D20D798273A5A51001674FB /* EventListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListModels.swift; sourceTree = "<group>"; };
+		8D20D799273A5A51001674FB /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		8D20D79A273A5A51001674FB /* EventListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListInteractor.swift; sourceTree = "<group>"; };
+		8D20D7A3273AA331001674FB /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		8D20D7A7273AA419001674FB /* APIErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorModel.swift; sourceTree = "<group>"; };
+		8D20D7A8273AA419001674FB /* NetworkLayerAlamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayerAlamofire.swift; sourceTree = "<group>"; };
+		8D20D7AB273AA4E6001674FB /* NetworkRechability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRechability.swift; sourceTree = "<group>"; };
+		8D62313E273C060E00C26BC8 /* EventCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardCell.swift; sourceTree = "<group>"; };
+		8D62313F273C060E00C26BC8 /* EventCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCardCell.xib; sourceTree = "<group>"; };
+		8D623142273C0CC600C26BC8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8D623144273C404100C26BC8 /* EventDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsPresenter.swift; sourceTree = "<group>"; };
+		8D623145273C404100C26BC8 /* EventDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsWorker.swift; sourceTree = "<group>"; };
+		8D623147273C404100C26BC8 /* EventDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsModels.swift; sourceTree = "<group>"; };
+		8D623148273C404100C26BC8 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		8D623149273C404100C26BC8 /* EventDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsInteractor.swift; sourceTree = "<group>"; };
+		8D623150273C417F00C26BC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A50C4D422F7DE2A570D50AB3 /* Pods-SeatGeekAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeatGeekAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SeatGeekAppTests/Pods-SeatGeekAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8065709C841D23885889BAF /* Pods_SeatGeekAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeatGeekAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D20D74D273A581B001674FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BA826FFCBFC72FC1B7E2E0 /* Pods_SeatGeekApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D20D766273A5821001674FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F3F23D80DE939CE02129A1 /* Pods_SeatGeekAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D20D771273A5821001674FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCF604F5A1FAD94436538C2C /* Pods_SeatGeekApp_SeatGeekAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A8E717F47AAE2E5605920A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				569FDCDEC0CD0B850150948E /* Pods-SeatGeekApp.debug.xcconfig */,
+				0B5B2FE1B600C587E734958E /* Pods-SeatGeekApp.release.xcconfig */,
+				8CAC89A8A8A4872E95FE7358 /* Pods-SeatGeekApp-SeatGeekAppUITests.debug.xcconfig */,
+				54E5192E4A8C4233517540A4 /* Pods-SeatGeekApp-SeatGeekAppUITests.release.xcconfig */,
+				A50C4D422F7DE2A570D50AB3 /* Pods-SeatGeekAppTests.debug.xcconfig */,
+				2441822E2F3C3A1768656659 /* Pods-SeatGeekAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D20D747273A581B001674FB = {
+			isa = PBXGroup;
+			children = (
+				8D20D752273A581B001674FB /* SeatGeekApp */,
+				8D20D76C273A5821001674FB /* SeatGeekAppTests */,
+				8D20D777273A5821001674FB /* SeatGeekAppUITests */,
+				8D20D751273A581B001674FB /* Products */,
+				8A8E717F47AAE2E5605920A5 /* Pods */,
+				938315AC92BD163D2FCEFBB3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D20D751273A581B001674FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D20D750273A581B001674FB /* SeatGeekApp.app */,
+				8D20D769273A5821001674FB /* SeatGeekAppTests.xctest */,
+				8D20D774273A5821001674FB /* SeatGeekAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D20D752273A581B001674FB /* SeatGeekApp */ = {
+			isa = PBXGroup;
+			children = (
+				8D62313D273C04A700C26BC8 /* Components */,
+				8D20D7A6273AA3BE001674FB /* Database Handlers */,
+				8D20D7A5273AA391001674FB /* Network Handlers */,
+				8D20D7A1273AA2D5001674FB /* Storyboards */,
+				8D20D7A2273AA302001674FB /* Scenes */,
+				8D20D787273A598E001674FB /* Utility */,
+				8D20D753273A581B001674FB /* AppDelegate.swift */,
+				8D20D75F273A5820001674FB /* Assets.xcassets */,
+				8D20D764273A5820001674FB /* Info.plist */,
+				8D20D75C273A581B001674FB /* SeatGeekApp.xcdatamodeld */,
+			);
+			path = SeatGeekApp;
+			sourceTree = "<group>";
+		};
+		8D20D76C273A5821001674FB /* SeatGeekAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D20D76D273A5821001674FB /* SeatGeekAppTests.swift */,
+				8D20D76F273A5821001674FB /* Info.plist */,
+			);
+			path = SeatGeekAppTests;
+			sourceTree = "<group>";
+		};
+		8D20D777273A5821001674FB /* SeatGeekAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D20D778273A5821001674FB /* SeatGeekAppUITests.swift */,
+				8D20D77A273A5821001674FB /* Info.plist */,
+			);
+			path = SeatGeekAppUITests;
+			sourceTree = "<group>";
+		};
+		8D20D786273A597F001674FB /* Event List */ = {
+			isa = PBXGroup;
+			children = (
+				8D20D799273A5A51001674FB /* EventListViewController.swift */,
+				8D20D795273A5A51001674FB /* EventListPresenter.swift */,
+				8D20D79A273A5A51001674FB /* EventListInteractor.swift */,
+				8D20D796273A5A51001674FB /* EventListWorker.swift */,
+				8D20D797273A5A51001674FB /* EventListRouter.swift */,
+				8D20D798273A5A51001674FB /* EventListModels.swift */,
+			);
+			path = "Event List";
+			sourceTree = "<group>";
+		};
+		8D20D787273A598E001674FB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8D20D7AB273AA4E6001674FB /* NetworkRechability.swift */,
+				8D623142273C0CC600C26BC8 /* Extensions.swift */,
+				8D623150273C417F00C26BC8 /* Constants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8D20D788273A5995001674FB /* Event Details */ = {
+			isa = PBXGroup;
+			children = (
+				8D623148273C404100C26BC8 /* EventDetailsViewController.swift */,
+				8D623149273C404100C26BC8 /* EventDetailsInteractor.swift */,
+				8D623144273C404100C26BC8 /* EventDetailsPresenter.swift */,
+				8D623145273C404100C26BC8 /* EventDetailsWorker.swift */,
+				8D623147273C404100C26BC8 /* EventDetailsModels.swift */,
+			);
+			path = "Event Details";
+			sourceTree = "<group>";
+		};
+		8D20D7A1273AA2D5001674FB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8D20D761273A5820001674FB /* LaunchScreen.storyboard */,
+				8D20D759273A581B001674FB /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8D20D7A2273AA302001674FB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8D20D786273A597F001674FB /* Event List */,
+				8D20D788273A5995001674FB /* Event Details */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8D20D7A5273AA391001674FB /* Network Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				8D20D7A3273AA331001674FB /* EndPoints.swift */,
+				8D20D7A7273AA419001674FB /* APIErrorModel.swift */,
+				8D20D7A8273AA419001674FB /* NetworkLayerAlamofire.swift */,
+			);
+			path = "Network Handlers";
+			sourceTree = "<group>";
+		};
+		8D20D7A6273AA3BE001674FB /* Database Handlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Database Handlers";
+			sourceTree = "<group>";
+		};
+		8D62313D273C04A700C26BC8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8D62313E273C060E00C26BC8 /* EventCardCell.swift */,
+				8D62313F273C060E00C26BC8 /* EventCardCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		938315AC92BD163D2FCEFBB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				030074FF9BC83456BEB52C67 /* Pods_SeatGeekApp.framework */,
+				673D13D57BC52200F402BC2B /* Pods_SeatGeekApp_SeatGeekAppUITests.framework */,
+				D8065709C841D23885889BAF /* Pods_SeatGeekAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D20D74F273A581B001674FB /* SeatGeekApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D20D77D273A5821001674FB /* Build configuration list for PBXNativeTarget "SeatGeekApp" */;
+			buildPhases = (
+				F807F34FFD46B66C871AE617 /* [CP] Check Pods Manifest.lock */,
+				8D20D74C273A581B001674FB /* Sources */,
+				8D20D74D273A581B001674FB /* Frameworks */,
+				8D20D74E273A581B001674FB /* Resources */,
+				63AF9ED812DCCC36B5E3964E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeatGeekApp;
+			productName = SeatGeekApp;
+			productReference = 8D20D750273A581B001674FB /* SeatGeekApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D20D768273A5821001674FB /* SeatGeekAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D20D780273A5821001674FB /* Build configuration list for PBXNativeTarget "SeatGeekAppTests" */;
+			buildPhases = (
+				BBB93AC1E43A454AD0E8AB92 /* [CP] Check Pods Manifest.lock */,
+				8D20D765273A5821001674FB /* Sources */,
+				8D20D766273A5821001674FB /* Frameworks */,
+				8D20D767273A5821001674FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D20D76B273A5821001674FB /* PBXTargetDependency */,
+			);
+			name = SeatGeekAppTests;
+			productName = SeatGeekAppTests;
+			productReference = 8D20D769273A5821001674FB /* SeatGeekAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D20D773273A5821001674FB /* SeatGeekAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D20D783273A5821001674FB /* Build configuration list for PBXNativeTarget "SeatGeekAppUITests" */;
+			buildPhases = (
+				E8139C39E1AE636437BABA15 /* [CP] Check Pods Manifest.lock */,
+				8D20D770273A5821001674FB /* Sources */,
+				8D20D771273A5821001674FB /* Frameworks */,
+				8D20D772273A5821001674FB /* Resources */,
+				87ADBEB6CAEA58F8162387AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D20D776273A5821001674FB /* PBXTargetDependency */,
+			);
+			name = SeatGeekAppUITests;
+			productName = SeatGeekAppUITests;
+			productReference = 8D20D774273A5821001674FB /* SeatGeekAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D20D748273A581B001674FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8D20D74F273A581B001674FB = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					8D20D768273A5821001674FB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 8D20D74F273A581B001674FB;
+					};
+					8D20D773273A5821001674FB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 8D20D74F273A581B001674FB;
+					};
+				};
+			};
+			buildConfigurationList = 8D20D74B273A581B001674FB /* Build configuration list for PBXProject "SeatGeekApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D20D747273A581B001674FB;
+			productRefGroup = 8D20D751273A581B001674FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D20D74F273A581B001674FB /* SeatGeekApp */,
+				8D20D768273A5821001674FB /* SeatGeekAppTests */,
+				8D20D773273A5821001674FB /* SeatGeekAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D20D74E273A581B001674FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D20D763273A5820001674FB /* LaunchScreen.storyboard in Resources */,
+				8D20D760273A5820001674FB /* Assets.xcassets in Resources */,
+				8D623141273C060E00C26BC8 /* EventCardCell.xib in Resources */,
+				8D20D75B273A581B001674FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D20D767273A5821001674FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D20D772273A5821001674FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63AF9ED812DCCC36B5E3964E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeatGeekApp/Pods-SeatGeekApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeatGeekApp/Pods-SeatGeekApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeatGeekApp/Pods-SeatGeekApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87ADBEB6CAEA58F8162387AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeatGeekApp-SeatGeekAppUITests/Pods-SeatGeekApp-SeatGeekAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeatGeekApp-SeatGeekAppUITests/Pods-SeatGeekApp-SeatGeekAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeatGeekApp-SeatGeekAppUITests/Pods-SeatGeekApp-SeatGeekAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB93AC1E43A454AD0E8AB92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeatGeekAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8139C39E1AE636437BABA15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeatGeekApp-SeatGeekAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F807F34FFD46B66C871AE617 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeatGeekApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D20D74C273A581B001674FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D20D79D273A5A51001674FB /* EventListRouter.swift in Sources */,
+				8D20D7A4273AA331001674FB /* EndPoints.swift in Sources */,
+				8D20D79F273A5A51001674FB /* EventListViewController.swift in Sources */,
+				8D20D7A9273AA419001674FB /* APIErrorModel.swift in Sources */,
+				8D20D79C273A5A51001674FB /* EventListWorker.swift in Sources */,
+				8D62314D273C404200C26BC8 /* EventDetailsModels.swift in Sources */,
+				8D62314B273C404200C26BC8 /* EventDetailsWorker.swift in Sources */,
+				8D62314A273C404200C26BC8 /* EventDetailsPresenter.swift in Sources */,
+				8D20D754273A581B001674FB /* AppDelegate.swift in Sources */,
+				8D20D75E273A581B001674FB /* SeatGeekApp.xcdatamodeld in Sources */,
+				8D62314F273C404200C26BC8 /* EventDetailsInteractor.swift in Sources */,
+				8D20D7A0273A5A51001674FB /* EventListInteractor.swift in Sources */,
+				8D62314E273C404200C26BC8 /* EventDetailsViewController.swift in Sources */,
+				8D623140273C060E00C26BC8 /* EventCardCell.swift in Sources */,
+				8D20D79E273A5A51001674FB /* EventListModels.swift in Sources */,
+				8D623151273C417F00C26BC8 /* Constants.swift in Sources */,
+				8D20D7AC273AA4E6001674FB /* NetworkRechability.swift in Sources */,
+				8D20D79B273A5A51001674FB /* EventListPresenter.swift in Sources */,
+				8D20D7AA273AA419001674FB /* NetworkLayerAlamofire.swift in Sources */,
+				8D623143273C0CC600C26BC8 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D20D765273A5821001674FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D20D76E273A5821001674FB /* SeatGeekAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D20D770273A5821001674FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D20D779273A5821001674FB /* SeatGeekAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D20D76B273A5821001674FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D20D74F273A581B001674FB /* SeatGeekApp */;
+			targetProxy = 8D20D76A273A5821001674FB /* PBXContainerItemProxy */;
+		};
+		8D20D776273A5821001674FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D20D74F273A581B001674FB /* SeatGeekApp */;
+			targetProxy = 8D20D775273A5821001674FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D20D759273A581B001674FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D20D75A273A581B001674FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D20D761273A5820001674FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D20D762273A5820001674FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D20D77B273A5821001674FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D20D77C273A5821001674FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D20D77E273A5821001674FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 569FDCDEC0CD0B850150948E /* Pods-SeatGeekApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SeatGeekApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digital14.SeatGeekApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D20D77F273A5821001674FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5B2FE1B600C587E734958E /* Pods-SeatGeekApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SeatGeekApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digital14.SeatGeekApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8D20D781273A5821001674FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A50C4D422F7DE2A570D50AB3 /* Pods-SeatGeekAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SeatGeekAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digital14.SeatGeekAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeatGeekApp.app/SeatGeekApp";
+			};
+			name = Debug;
+		};
+		8D20D782273A5821001674FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2441822E2F3C3A1768656659 /* Pods-SeatGeekAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SeatGeekAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digital14.SeatGeekAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeatGeekApp.app/SeatGeekApp";
+			};
+			name = Release;
+		};
+		8D20D784273A5821001674FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CAC89A8A8A4872E95FE7358 /* Pods-SeatGeekApp-SeatGeekAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SeatGeekAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digital14.SeatGeekAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeatGeekApp;
+			};
+			name = Debug;
+		};
+		8D20D785273A5821001674FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E5192E4A8C4233517540A4 /* Pods-SeatGeekApp-SeatGeekAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SeatGeekAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digital14.SeatGeekAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeatGeekApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D20D74B273A581B001674FB /* Build configuration list for PBXProject "SeatGeekApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D20D77B273A5821001674FB /* Debug */,
+				8D20D77C273A5821001674FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D20D77D273A5821001674FB /* Build configuration list for PBXNativeTarget "SeatGeekApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D20D77E273A5821001674FB /* Debug */,
+				8D20D77F273A5821001674FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D20D780273A5821001674FB /* Build configuration list for PBXNativeTarget "SeatGeekAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D20D781273A5821001674FB /* Debug */,
+				8D20D782273A5821001674FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D20D783273A5821001674FB /* Build configuration list for PBXNativeTarget "SeatGeekAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D20D784273A5821001674FB /* Debug */,
+				8D20D785273A5821001674FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8D20D75C273A581B001674FB /* SeatGeekApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8D20D75D273A581B001674FB /* SeatGeekApp.xcdatamodel */,
+			);
+			currentVersion = 8D20D75D273A581B001674FB /* SeatGeekApp.xcdatamodel */;
+			path = SeatGeekApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8D20D748273A581B001674FB /* Project object */;
+}
