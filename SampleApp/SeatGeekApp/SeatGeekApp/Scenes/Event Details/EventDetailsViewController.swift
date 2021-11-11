@@ -19,6 +19,8 @@ class EventDetailsViewController: UIViewController, EventDetailsDisplayLogic
     @IBOutlet weak var txtDescription: UITextView!
     @IBOutlet weak var lblDate: UILabel!
     @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblVenue: UILabel!
+
 
 
   // MARK: Object lifecycle
@@ -99,7 +101,7 @@ class EventDetailsViewController: UIViewController, EventDetailsDisplayLogic
 
     if let venuePresent = detailObj.venue
     {
-        self.txtDescription.text = "\(venuePresent.address), \(venuePresent.city) ,\(venuePresent.state)"
+        self.lblVenue.text = "\(venuePresent.address), \(venuePresent.city) ,\(venuePresent.state)"
     }
     
     self.lblDate.text = detailObj.datetime

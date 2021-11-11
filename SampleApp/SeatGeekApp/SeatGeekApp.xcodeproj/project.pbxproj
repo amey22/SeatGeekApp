@@ -31,6 +31,7 @@
 		8D62314E273C404200C26BC8 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D623148273C404100C26BC8 /* EventDetailsViewController.swift */; };
 		8D62314F273C404200C26BC8 /* EventDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D623149273C404100C26BC8 /* EventDetailsInteractor.swift */; };
 		8D623151273C417F00C26BC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D623150273C417F00C26BC8 /* Constants.swift */; };
+		8D623153273D13E900C26BC8 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D623152273D13E900C26BC8 /* AppManager.swift */; };
 		D0F3F23D80DE939CE02129A1 /* Pods_SeatGeekAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8065709C841D23885889BAF /* Pods_SeatGeekAppTests.framework */; };
 		F1BA826FFCBFC72FC1B7E2E0 /* Pods_SeatGeekApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030074FF9BC83456BEB52C67 /* Pods_SeatGeekApp.framework */; };
 		FCF604F5A1FAD94436538C2C /* Pods_SeatGeekApp_SeatGeekAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673D13D57BC52200F402BC2B /* Pods_SeatGeekApp_SeatGeekAppUITests.framework */; };
@@ -91,6 +92,7 @@
 		8D623148273C404100C26BC8 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		8D623149273C404100C26BC8 /* EventDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsInteractor.swift; sourceTree = "<group>"; };
 		8D623150273C417F00C26BC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8D623152273D13E900C26BC8 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		A50C4D422F7DE2A570D50AB3 /* Pods-SeatGeekAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeatGeekAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SeatGeekAppTests/Pods-SeatGeekAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8065709C841D23885889BAF /* Pods_SeatGeekAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeatGeekAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -211,6 +213,7 @@
 				8D20D7AB273AA4E6001674FB /* NetworkRechability.swift */,
 				8D623142273C0CC600C26BC8 /* Extensions.swift */,
 				8D623150273C417F00C26BC8 /* Constants.swift */,
+				8D623152273D13E900C26BC8 /* AppManager.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				8D623140273C060E00C26BC8 /* EventCardCell.swift in Sources */,
 				8D20D79E273A5A51001674FB /* EventModel.swift in Sources */,
 				8D623151273C417F00C26BC8 /* Constants.swift in Sources */,
+				8D623153273D13E900C26BC8 /* AppManager.swift in Sources */,
 				8D20D7AC273AA4E6001674FB /* NetworkRechability.swift in Sources */,
 				8D20D79B273A5A51001674FB /* EventListPresenter.swift in Sources */,
 				8D20D7AA273AA419001674FB /* NetworkLayerAlamofire.swift in Sources */,
