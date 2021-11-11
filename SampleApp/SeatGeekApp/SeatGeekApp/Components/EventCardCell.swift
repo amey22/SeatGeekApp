@@ -44,17 +44,7 @@ class EventCardCell: UITableViewCell {
             self.imgEvent.setCasheImage(imageURL: imagePresent, id: "E\(details.id)")
         }
         
-        
-//        if let date  = details.datetime_utc.getDate_dd_mm_yyyy_HH_mm_ss(timeZone: TimeZone(abbreviation: "UTC"))
-//        {
-//            // change date to local date
-//            let strLocalDate =  (date.globalTimeToLocal()).getStringFromDate_dd_mm_yyyy_HH_mm(timeZone:TimeZone(abbreviation: "UTC")) ?? ""
-//
-//            // change into appropriate format
-//            let dateStr = strLocalDate.convertStringToDateWith(sourceFormatter: DateFormatter.format_dd_mm_yyyy_HH_mm_ss, destinationFormatter:  DateFormatter.format_dd_mmm_yy_HH_mm, timeZone: TimeZone(abbreviation: "UTC"))
-//
-//                self.labelEndDate.text = "Ends: " + strLocalDate
-//        }
+        self.lblDate.text = details.datetime
     }
 
     
