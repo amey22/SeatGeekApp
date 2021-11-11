@@ -48,7 +48,7 @@ enum EventModel
         let title : String
         let description : String
         let id : Int64
-        let datetime_utc : String
+        var datetime : String
         let performers : [Performers]?
         let venue : Venue?
 
@@ -58,7 +58,7 @@ enum EventModel
             case title = "title"
             case description = "description"
             case id = "id"
-            case datetime_utc = "datetime_utc"
+            case datetime = "datetime_utc"
             case performers = "performers"
             case venue = "venue"
         }
@@ -70,9 +70,17 @@ enum EventModel
             title = try values.decodeIfPresent(String.self, forKey: .title) ?? "NA"
             description = try values.decodeIfPresent(String.self, forKey: .description) ?? "NA"
             id = try values.decodeIfPresent(Int64.self, forKey: .id) ?? 0
-            datetime_utc = try values.decodeIfPresent(String.self, forKey: .datetime_utc) ?? ""
+            datetime = try values.decodeIfPresent(String.self, forKey: .datetime) ?? ""
             venue = try values.decodeIfPresent(Venue.self, forKey: .venue)
             performers = try values.decodeIfPresent([Performers].self, forKey: .performers)
+            
+            
+            var date = datetime.replacingOccurrences(of: "T", with: " ").getDateFromString_yyyy_MM_dd_T_HH_mm_ss(timeZone: nil)
+
+           // date = date?.globalTimeToLocal()
+            
+            datetime = date?.getStringFromDate_EEE_dd_MMM_yyyy_hh_mm_ss_a(timeZone: TimeZone.current) ?? ""
+            
         }
      }
 

@@ -45,3 +45,74 @@ extension UIImageView{
     }
 }
 
+extension String
+{
+   
+    func getDateFromString_EEE_dd_MMM_yyyy (timeZone:TimeZone?) -> Date? {
+        let df = DateFormatter.format_EEE_dd_MMM_yyyy_hh_mm_a
+        if let tz = timeZone
+        {
+            df.timeZone = tz
+        }
+        return df.date(from:self)
+    }
+    func getDateFromString_yyyy_MM_dd_T_HH_mm_ss (timeZone:TimeZone?) -> Date? {
+        let df = DateFormatter.format_yyyy_MM_dd_T_HH_mm_ss
+        if let tz = timeZone
+        {
+            df.timeZone = tz
+        }
+        return df.date(from:self)
+    }
+
+}
+
+extension Date
+{
+    // Convert local time to UTC (or GMT)
+    func localToGlobalTime() -> Date {
+        let timezone = TimeZone.current
+        let seconds = -TimeInterval(timezone.secondsFromGMT(for: self))
+        return Date(timeInterval: seconds, since: self)
+    }
+    
+    // Convert UTC (or GMT) to local time
+    func globalTimeToLocal() -> Date {
+        let timezone = NSTimeZone.local
+        let seconds = TimeInterval(timezone.secondsFromGMT(for: self))
+        return Date(timeInterval: seconds, since: self)
+    }
+
+    func getStringFromDate_EEE_dd_MMM_yyyy_hh_mm_ss_a(timeZone:TimeZone?) -> String?
+    {
+        let df = DateFormatter.format_EEE_dd_MMM_yyyy_hh_mm_a
+        if let tz = timeZone
+        {
+            df.timeZone = tz
+        }
+        return df.string(from:self)
+    }
+}
+
+extension DateFormatter
+{
+    
+    public static let format_EEE_dd_MMM_yyyy_hh_mm_a: DateFormatter =
+    {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "E, d MMM yyyy hh:mm a"
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        return formatter
+    }()
+    
+    
+    
+    public static let format_yyyy_MM_dd_T_HH_mm_ss: DateFormatter =
+    {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        return formatter
+    }()
+
+}
