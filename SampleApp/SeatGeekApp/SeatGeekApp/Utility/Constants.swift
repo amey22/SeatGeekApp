@@ -11,3 +11,9 @@ import Foundation
 public enum SegueKeys {
     static let ShowEventDetails = "ShowEventDetails"
 }
+
+
+public enum AppKeys {
+    static let FavouriteResults = "favouriteResults"
+}
+

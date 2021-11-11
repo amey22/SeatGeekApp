@@ -61,6 +61,7 @@ class EventListViewController: UIViewController
             return
         }
         destVc.detailObj = (sender as! EventModel.Events)
+        destVc.delegate = self
     }
   }
   
@@ -219,6 +220,23 @@ extension EventListViewController:UISearchBarDelegate
         searchBar.searchTextField.resignFirstResponder()
         self.loadEventList(searchStr: "")
     }
+}
 
 
+extension EventListViewController:FavouriteDelegate
+{
+    func markEventFavouriteStatus(event: EventModel.Events)
+    {
+        if let eventObjIndex = self.arrEventList.firstIndex(where: {$0.id == event.id})
+        {
+            self.arrEventList[eventObjIndex] = event
+        }
+        
+       // self.arrEventList.filter({$0.id == event.id}).first?.isFavourite = event.isFavourite
+        
+        self.eventTableView.reloadData()
+        
+    }
+    
+    
 }

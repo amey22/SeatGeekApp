@@ -15,6 +15,8 @@ class EventCardCell: UITableViewCell {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblVenue: UILabel!
     @IBOutlet weak var lblDate: UILabel!
+    @IBOutlet  var btnFavourite: UIButton!
+
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -45,6 +47,8 @@ class EventCardCell: UITableViewCell {
         }
         
         self.lblDate.text = details.datetime
+        
+        self.btnFavourite.isHidden = !details.isFavourite
     }
 
     

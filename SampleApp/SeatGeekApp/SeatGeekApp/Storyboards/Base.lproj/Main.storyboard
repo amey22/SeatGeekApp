@@ -210,6 +210,7 @@
                     <navigationItem key="navigationItem" id="Lha-DM-ik7"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="btnFavourite" destination="ThO-6b-tYk" id="Cic-lN-m5k"/>
                         <outlet property="imgEvent" destination="oQG-wK-1jI" id="Oj7-oc-pv9"/>
                         <outlet property="lblDate" destination="Voo-5X-m99" id="far-VW-F8Y"/>
                         <outlet property="lblTitle" destination="JbH-Jr-Ytw" id="L6Q-2X-mmF"/>

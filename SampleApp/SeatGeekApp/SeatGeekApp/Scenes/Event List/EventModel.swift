@@ -10,13 +10,6 @@ enum EventModel
 {
   // MARK: Use cases
   
-    struct actionResponse
-    {
-        let status : Bool
-        let message : String
-    }
-    
-    
     struct Request:Codable
     {
         let searchString :String
@@ -58,6 +51,8 @@ enum EventModel
         var datetime : String
         let performers : [Performers]?
         let venue : Venue?
+        var isFavourite : Bool = false
+
 
 
         enum CodingKeys: String, CodingKey
@@ -145,6 +140,22 @@ enum EventModel
       var result:  [Events]?
     }
 
+}
+
+
+enum FavouriteModel
+{
+    struct Response
+    {
+        let status : Bool
+        let message : String
+    }
+    
+    struct Request
+    {
+        let id :Int64
+    }
+    
 }
 
 /**

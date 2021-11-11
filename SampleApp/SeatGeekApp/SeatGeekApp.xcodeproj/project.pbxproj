@@ -164,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				8D62313D273C04A700C26BC8 /* Components */,
-				8D20D7A6273AA3BE001674FB /* Database Handlers */,
 				8D20D7A5273AA391001674FB /* Network Handlers */,
 				8D20D7A1273AA2D5001674FB /* Storyboards */,
 				8D20D7A2273AA302001674FB /* Scenes */,
@@ -255,13 +254,6 @@
 				8D20D7A8273AA419001674FB /* NetworkLayerAlamofire.swift */,
 			);
 			path = "Network Handlers";
-			sourceTree = "<group>";
-		};
-		8D20D7A6273AA3BE001674FB /* Database Handlers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Database Handlers";
 			sourceTree = "<group>";
 		};
 		8D62313D273C04A700C26BC8 /* Components */ = {

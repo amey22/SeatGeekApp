@@ -11,10 +11,8 @@ import Kingfisher
 class AppManager: NSObject
 {
     static let shared = AppManager()
-    //static let sharedDatabase = DatabaseHandler()
-    
+    let appUserDefault = UserDefaults.standard
     let appDelegate = AppDelegate.sharedInstance
-    var  fileHandler:FileHandle? = nil
     
     
     private override init() {
@@ -56,7 +54,6 @@ class AppManager: NSObject
         return ""
 
     }
-
    
 }
 /*

@@ -8,7 +8,7 @@ import UIKit
 
 protocol EventDetailsPresentationLogic
 {
-    func presentResult(response: EventModel.actionResponse)
+    func presentResult(response: FavouriteModel.Response)
 }
 
 class EventDetailsPresenter: EventDetailsPresentationLogic
@@ -17,7 +17,7 @@ class EventDetailsPresenter: EventDetailsPresentationLogic
   
   // MARK: Do something
   
-  func presentResult(response: EventModel.actionResponse)
+  func presentResult(response: FavouriteModel.Response)
   {
     viewController?.displayFavouriteResult(viewModel: response)
   }
