@@ -102,7 +102,7 @@ class EventDetailsViewController: UIViewController, EventDetailsDisplayLogic
         self.txtDescription.text = "\(venuePresent.address), \(venuePresent.city) ,\(venuePresent.state)"
     }
     
-    self.lblDate.text = detailObj.datetime_utc
+    self.lblDate.text = detailObj.datetime
 
   }
   

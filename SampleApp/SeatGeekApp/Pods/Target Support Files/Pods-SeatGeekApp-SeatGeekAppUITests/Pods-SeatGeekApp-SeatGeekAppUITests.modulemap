@@ -1,0 +1,6 @@
+framework module Pods_SeatGeekApp_SeatGeekAppUITests {
+  umbrella header "Pods-SeatGeekApp-SeatGeekAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
