@@ -8,7 +8,8 @@ import UIKit
 
 class EventDetailsWorker
 {
-  func doSomeWork()
+  func saveAsFavourite()
   {
+    
   }
 }

@@ -10,6 +10,13 @@ enum EventModel
 {
   // MARK: Use cases
   
+    struct actionResponse
+    {
+        let status : Bool
+        let message : String
+    }
+    
+    
     struct Request:Codable
     {
         let searchString :String

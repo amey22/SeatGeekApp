@@ -6,9 +6,9 @@
 
 import UIKit
 
-protocol EventDetailsDisplayLogic: class
+protocol EventDetailsDisplayLogic: AnyObject
 {
-  func displayFavouriteResult(viewModel: EventDetails.Something.ViewModel)
+  func displayFavouriteResult(viewModel: EventModel.actionResponse)
 }
 
 class EventDetailsViewController: UIViewController, EventDetailsDisplayLogic
@@ -106,7 +106,7 @@ class EventDetailsViewController: UIViewController, EventDetailsDisplayLogic
 
   }
   
-    func displayFavouriteResult(viewModel: EventDetails.Something.ViewModel)
+  func displayFavouriteResult(viewModel: EventModel.actionResponse)
   {
     //nameTextField.text = viewModel.name
   }

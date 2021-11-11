@@ -9,15 +9,11 @@ import UIKit
 
 protocol EventDetailsBusinessLogic
 {
-  func doSomething(request: EventDetails.Something.Request)
+    func saveAsFavourite(request: EventModel.Events)
 }
 
-protocol EventDetailsDataStore
-{
-  //var name: String { get set }
-}
 
-class EventDetailsInteractor: EventDetailsBusinessLogic, EventDetailsDataStore
+class EventDetailsInteractor: EventDetailsBusinessLogic
 {
   var presenter: EventDetailsPresentationLogic?
   var worker: EventDetailsWorker?
@@ -25,12 +21,9 @@ class EventDetailsInteractor: EventDetailsBusinessLogic, EventDetailsDataStore
   
   // MARK: Do something
   
-  func doSomething(request: EventDetails.Something.Request)
+  func saveAsFavourite(request: EventModel.Events)
   {
     worker = EventDetailsWorker()
-    worker?.doSomeWork()
-    
-    let response = EventDetails.Something.ViewModel()
-    presenter?.presentSomething(response: response)
+    worker?.saveAsFavourite()
   }
 }

@@ -6,7 +6,7 @@
 
 import UIKit
 
-protocol EventListDisplayLogic: class
+protocol EventListDisplayLogic: AnyObject
 {
   func displayEventList(viewModel: EventModel.ViewModel)
 }
@@ -14,7 +14,6 @@ protocol EventListDisplayLogic: class
 class EventListViewController: UIViewController
 {
     var interactor: EventListBusinessLogic?
-    var router: (NSObjectProtocol & EventListRoutingLogic & EventListDataPassing)?
     var arrEventList : [EventModel.Events] = []
     
 
@@ -46,13 +45,9 @@ class EventListViewController: UIViewController
     let viewController = self
     let interactor = EventListInteractor()
     let presenter = EventListPresenter()
-    let router = EventListRouter()
     viewController.interactor = interactor
-    viewController.router = router
     interactor.presenter = presenter
     presenter.viewController = viewController
-    router.viewController = viewController
-   // router.dataStore = interactor
   }
   
   // MARK: Routing
@@ -77,6 +72,11 @@ class EventListViewController: UIViewController
     initialiseView()
     loadEventList(searchStr: "")
   }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
   
   // MARK: Create View 
   
