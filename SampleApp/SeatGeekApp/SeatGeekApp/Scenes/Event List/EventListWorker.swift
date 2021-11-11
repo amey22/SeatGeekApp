@@ -26,7 +26,7 @@ class EventListWorker
              "Content-Type": "application/json",
          ]
      
-        let urlString = EndPointApi.getEventList.rawValue + "client_id=MjQzNTgwMTR8MTYzNjQ1MDcxMi43MjI4MDk&q=\(request.searchString)"
+        let urlString = EndPointApi.getEventList.rawValue + "client_id=\(AppManager.shared.getClientIdForGeekResources())&q=\(request.searchString)"
 
         self.networkLayer.get(urlString: urlString,headers: headers, successHandler: successHandler, errorHandler: errorHandler)
     }
