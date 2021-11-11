@@ -9,28 +9,33 @@ import UIKit
 
 protocol EventDetailsBusinessLogic
 {
-  func doSomething(request: EventDetails.Something.Request)
+    func saveAsFavourite(request: FavouriteModel.Request)
+    func removeAsFavourite(request: FavouriteModel.Request)
+    func isFavouriteEvent(request: FavouriteModel.Request) -> Bool
 }
 
-protocol EventDetailsDataStore
-{
-  //var name: String { get set }
-}
 
-class EventDetailsInteractor: EventDetailsBusinessLogic, EventDetailsDataStore
+class EventDetailsInteractor: EventDetailsBusinessLogic
 {
   var presenter: EventDetailsPresentationLogic?
-  var worker: EventDetailsWorker?
+  var worker: EventDetailsWorker = EventDetailsWorker()
   //var name: String = ""
   
   // MARK: Do something
   
-  func doSomething(request: EventDetails.Something.Request)
-  {
-    worker = EventDetailsWorker()
-    worker?.doSomeWork()
+    func saveAsFavourite(request: FavouriteModel.Request)
+    {
+        worker.setFavouriteResults(id: request.id)
+    }
+
+    func removeAsFavourite(request: FavouriteModel.Request)
+    {
+        worker.removeFavourite(id:request.id )
+    }
     
-    let response = EventDetails.Something.ViewModel()
-    presenter?.presentSomething(response: response)
-  }
+    func isFavouriteEvent(request: FavouriteModel.Request) -> Bool
+    {
+        return worker.isFavourite(id: request.id)
+    }
+    
 }
